@@ -1,0 +1,42 @@
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>Editing Article</h1>
+      <%= form_for :article, url: article_path(@article), method: :patch, :html =>                        { :multipart => true } do |f| %>
+        <p>
+          <%= f.label :display_date %> - YYYY-MM-DD<br />
+          <%= f.date_field :sort_date %>
+        </p>
+
+        <p>
+          <%= f.label :author %><br />
+          <%= f.text_field :author, size: "40" %>
+        </p>
+
+        <p>
+          <%= f.label :title %><br />
+          <%= f.text_field :title, size: "118" %>
+        </p>
+
+        <p>
+          <%= f.label :text %><br />
+          <%= f.text_area :text, size: "120x15" %>
+        </p>
+
+        <p>
+          <%= f.label :image_caption %><br />
+          <%= f.text_field :imgcap, size: "118" %>
+        </p>
+
+        <p>
+          <%= f.file_field :photo %>
+        </p>
+
+        <p>
+          <%= f.submit "Update", class: "btn btn-primary" %>
+        </p>
+        <p>
+          <%= link_to "delete", :article, method: :delete, data: { confirm: "You sure?" } %>
+        </p>
+      <% end %>
+    </div>
+  </div>
