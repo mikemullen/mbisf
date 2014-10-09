@@ -1,4 +1,4 @@
-Mullenlabs::Application.routes.draw do
+Mbisf::Application.routes.draw do
 
   resources :articles
 

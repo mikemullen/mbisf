@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-Mullenlabs::Application.config.secret_key_base = secure_token
+Mbisf::Application.config.secret_key_base = secure_token
