@@ -67,14 +67,14 @@ body {
 }
 
 #logo:empty {
-  width: 72px;
-  height: 54px;
-  background-image: asset_url('logodraft.png');
-  background-size: 72px 54px;
+  width: 216px;
+  height: 72px;
+  background-image: asset_url('logo.png');
+  background-size: 216px 72px;
 }
 
 #logo:hover {
-  background-image: asset_url('logodrafton.png');
+  background-image: asset_url('logoon.png');
 }
 
 /* foot logo styles */
