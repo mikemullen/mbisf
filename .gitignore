@@ -27,3 +27,7 @@ doc/
 
 # Ignore articles controller
 /app/controllers/articles_controller.rb
+
+# Ignore back-up files
+/preBlogBackUp
+/xpreBlogBackUp
